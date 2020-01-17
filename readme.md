@@ -24,6 +24,8 @@ $ npm i
 $ npm run start
 ```
 
+Note: code ที่ file index.js บรรทัดที่ 44 ตั้งใจทำให้ Step 2 ทำงานไม่สำเร็จ ถ้า run `npm run start` สิ่งที่ได้คือ จะสร้าง database ที่ชื่อว่า example ข้างในมี collection ชื่อ users ใน collection users จะมี users ของ Jane และ John มีเงินคนละ 50
+
 ---
 
 ### Example
@@ -43,6 +45,6 @@ without Transaction
 
 with Transaction
 
-การตัดเงินออกจากบัญชีของ John $10, และเพิ่มให้ Jane $10 จะูกบันทึกลง database ก็ต่อเมื่อ Step 1, Step 2 completes ทั้งคู่ remove/comment code บรรทัดที่ 44 file index.js ออก
+การตัดเงินออกจากบัญชีของ John $10, และเพิ่มให้ Jane $10 จะูกบันทึกลง database ก็ต่อเมื่อ Step 1, Step 2 completes ทั้งคู่ทดสอบได้โดยการ remove code บรรทัดที่ 44 file index.js ออก run `npm run start` แล้วไปดูผลลัพธ์ที่ database
 
 ---
